@@ -1,0 +1,137 @@
+/* Empty. Add your own CSS if you like */
+.dark-background{
+     background-color: rgba(51,51,51,0.95)  !important;          
+}
+.white-text{
+     color: #FFF !important;
+}
+.trans{
+     background-color: rgba(255,255,255,0.95);
+}
+.wall-background {         
+    background-image: url('../img/bg.png');
+}
+
+a {
+    color: #FFF;
+}
+
+.hcenter{
+    text-align: center;
+}
+
+.bar-footer .title{
+    height: 72px;
+}
+.bar .title{
+    top: 1px;
+}
+.bar-footer{
+    height: 66px;
+}
+
+.center-footer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.list-inset{
+    background: none;
+}
+.foot{
+    margin-left: -10px !important; 
+    margin-top: -1px !important;
+}
+/*.item{
+    background-color: transparent;
+}*/
+
+.floating-menu-label{
+    background-color: #333 !important;
+    color: #FFF !important;
+}
+
+.form-background{
+    background-color: #FFF !important;
+}
+
+.disconnected{
+    background-color: #EDEDED !important;
+}
+
+.item-right{
+    float: right;
+}
+
+.footer-height{
+    height: 70px;
+}
+
+.grayscale {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.vcenter_avatar{
+    top: 30% !important;
+}
+
+.textarea-custom {
+  font-size: 16px;
+  color: #2b3d4f;
+  width: 100%;
+  outline: none;
+  resize: none; }
+  .textarea-custom::-webkit-input-placeholder {
+    color: #b9b9b9; }
+  .textarea-custom::-moz-placeholder {
+    color: #b9b9b9; }
+  .textarea-custom:-ms-input-placeholder {
+    color: #b9b9b9; }
+  .textarea-custom :-moz-placeholder {
+    color: #b9b9b9; 
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.scroll-refresher .ionic-refresher-content.ionic-refresher-with-text{
+  color: #fff;
+}
+
+ion-popover-view.fit {
+  height: auto;
+}
+
+ion-popover-view.fit ion-content {
+  position: relative;
+}
+
+.platform-android ion-popover-view.fit {
+  margin-top: 10px;
+}
+
+.platform-ios ion-popover-view.fit {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.schema-form-fieldset-title{
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 0px 0px 4px 6px;
+}
+.schema-form-fieldset{
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+.schema-form-fieldset, .schema-form-textarea, .schema-form-input, .schema-form-select{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

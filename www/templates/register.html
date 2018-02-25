@@ -1,0 +1,86 @@
+<ion-view hide-nav-bar="false" view-title="{{'common.viewsTitles.register'|translate}}" class="wall-background">        
+    <ion-content overflow-scroll="false">    
+    
+    <div class="list list-inset">
+        <label class="item item-input form-background">
+            <input ng-model="register.userId" placeholder="{{'common.others.username'|translate}}" type="text" class="form-background">
+        </label>
+    </div>
+    <div class="list list-inset">
+        <label class="item item-input form-background">
+            <input ng-model="register.password" placeholder="{{'common.others.password'|translate}}" type="password" class="form-background">
+        </label>
+    </div>
+    <div class="list list-inset">
+        <label class="item item-input form-background">            
+            <input ng-model="register.cPassword" placeholder="{{'common.others.confirmPassword'|translate}}" type="password" class="form-background">
+        </label>
+    </div>
+    <div class="list list-inset">
+        <label class="item item-input form-background">            
+            <input ng-model="register.name" placeholder="{{'common.others.name'|translate}}" type="text" class="form-background">
+        </label>
+    </div>
+    <div class="list list-inset">
+        <label class="item item-input form-background">            
+            <input ng-model="register.lastName" placeholder="{{'common.others.lastName'|translate}}" type="text" class="form-background">
+        </label>        
+    </div>
+    <div class="list list-inset">
+        <label class="item item-input form-background">            
+            <input ng-model="register.email" placeholder="{{'common.others.email'|translate}}" type="email" class="form-background">
+        </label>
+    </div>
+    <div class="list list-inset">
+        <label class="item item-input item-select form-background">
+            <div class="input-label">{{'common.others.country'|translate}}</div>
+            <select ng-model="register.country" ng-init="register.country=countries[0]" ng-options="country.name for country in countries"></select>
+        </label>
+        <label class="item item-input form-background">
+            <div class="input-label">{{'common.others.phone'|translate}}&nbsp;{{register.country.dial_code}}</div>            
+            <input ng-model="register.phone" placeholder="{{'common.others.phone'|translate}}" type="tel" class="form-background">
+        </label>
+        <label class="item item-input item-select form-background">
+            <div class="input-label">{{'common.others.lang'|translate}}</div>            
+            <select ng-model="register.lang">
+                <option value="en">{{'common.others.english'|translate}}</option>
+                <option value="es">{{'common.others.spanish'|translate}}</option>
+            </select>
+        </label>
+        <label class="item item-input item-select form-background">
+            <div class="input-label">{{'common.others.timezone'|translate}}</div>            
+            <select ng-init="register.timezone = options[0]" ng-model="register.timezone">
+                <option value="0">GMT0</option>
+                <option value="-11">GMT-11</option>
+                <option value="-10">GMT-10</option>
+                <option value="-9">GMT-9</option>
+                <option value="-8">GMT-8</option>
+                <option value="-7">GMT-7</option>
+                <option value="-6">GMT-6</option>
+                <option value="-5">GMT-5</option>
+                <option value="-4">GMT-4</option>
+                <option value="-3">GMT-3</option>
+                <option value="-2">GMT-2</option>
+                <option value="-1">GMT-1</option>                
+                <option value="1">GMT+1</option>
+                <option value="2">GMT+2</option>
+                <option value="3">GMT+3</option>
+                <option value="4">GMT+4</option>
+                <option value="5">GMT+5</option>
+                <option value="6">GMT+6</option>
+                <option value="7">GMT+7</option>
+                <option value="8">GMT+8</option>
+                <option value="9">GMT+9</option>
+                <option value="10">GMT+10</option>
+                <option value="11">GMT+11</option>
+                <option value="12">GMT+12</option>
+            </select>
+        </label>
+    </div>    
+
+    <div class="list list-inset">
+        <button class="button button-block button-assertive" outline item-right ng-click="signup()">{{'common.buttons.signup'|translate}}</button>                                                                                      
+    </div>
+
+    </ion-content>
+</ion-view>

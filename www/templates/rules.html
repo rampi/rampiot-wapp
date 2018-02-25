@@ -1,0 +1,28 @@
+<ion-view hide-nav-bar="false" view-title="{{'common.viewsTitles.rules'|translate}}" class="wall-background">
+    
+    <ion-nav-bar class="bar-dark bar bar-header" align-title="center">
+      <ion-nav-back-button>
+      </ion-nav-back-button>      
+    </ion-nav-bar>
+
+    <ion-content overflow-scroll="false">
+        <div class="list card trans" ng-if="rules.length>0">
+          <ion-item ng-repeat="rule in rules" 
+            on-tap="" 
+            class="item">                            
+              <div class="item item-text-wrap">
+                  {{rule.name}}
+                  <div class="item-right">                    
+                    <button ng-if="rule.userId===Profile.userId" class="button button-assertive button-small" ng-click="delete($index, rule._id)" outline item-right>{{'common.buttons.remove'|translate}}</button>
+                  </div>
+              </div>              
+          </ion-item>           
+        </div>
+        <div class="card" ng-if="rules.length==0">
+          <div class="item item-text-wrap">
+            {{'rules.rulesNotFound'|translate}}
+          </div>
+        </div>        
+        <div class="footer-height"/>
+    </ion-content>    
+</ion-view>

@@ -1,0 +1,9 @@
+<div class="button-bar">
+  <a ng-if="thing.owner===Profile.userId" class="button button-assertive ion-android-delete" on-tap="delete({{thing}}, $index)"></a>  
+  <a ng-if="thing.owner===Profile.userId" class="button button-royal ion-android-share-alt" on-tap="share({{thing}})"></a>      
+  <a ng-if="thing.type._id === 'SMART_DOOR'" ng-disabled="!isConnected(thing)" 
+    class="button button-light ion-android-lock" on-tap="fire(thing, {event:'lock'})"></a>
+  <a ng-if="thing.type._id === 'SMART_DOOR'" ng-disabled="!isConnected(thing)" 
+  class="button button-assertive ion-android-unlock" on-tap="fire(thing, {event:'unlock'})"></a>  
+  <a class="button button-positive ion-more" on-tap="openPopover($event, {{thing}})"></a>  
+</div>

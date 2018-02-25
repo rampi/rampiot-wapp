@@ -1,0 +1,33 @@
+<ion-view cache-view="false" hide-nav-bar="false" view-title="{{'common.viewsTitles.share'|translate}}" class="wall-background">    
+    
+    <ion-nav-bar class="bar-dark bar bar-header" align-title="center">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+      <ion-nav-buttons side="secondary">
+        <button class="button ion-plus" ng-click="share(thing._id)">&nbsp;{{'common.buttons.new'|translate}}</button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+
+    <ion-content overflow-scroll="false">
+        <div class="list card trans" ng-if="thing.users.length>0">
+          <ion-item ng-repeat="user in thing.users" 
+            on-tap="" 
+            class="item">                            
+              <div class="item item-text-wrap">
+                  {{user.name}}&nbsp;{{user.lastName}}
+                  <p>{{user.userId}}</p>
+                  <p>{{user.email}}</p>
+                  <div class="item-right">
+                    <button class="button button-assertive button-small" ng-click="cancel($index, user.email, user.userId, thing._id)" outline item-right>{{'common.buttons.cancel'|translate}}</button>
+                  </div>
+              </div>              
+          </ion-item>           
+        </div>        
+        <div class="card" ng-if="!thing.users || thing.users.length==0">
+          <div class="item item-text-wrap">
+            {{'share.notFound'|translate}}
+          </div>
+        </div>        
+        <div class="footer-height"/>
+    </ion-content>    
+</ion-view>

@@ -1,0 +1,8 @@
+<fieldset ng-disabled="form.readonly"
+          class="schema-form-fieldset {{form.htmlClass}}">
+  <div ng-show="showTitle()" class="item schema-form-fieldset-title">
+    {{ form.title }}
+  </div>
+  <!-- Help block for help text and error message -->
+  <p class="help-block" ng-show="form.description" ng-bind-html="form.description"></p>
+</fieldset>

@@ -1,0 +1,33 @@
+<ion-view hide-nav-bar="false" view-title="{{'common.viewsTitles.scheduled'|translate}}" class="wall-background">    
+    
+    <ion-nav-bar class="bar-dark bar bar-header" align-title="center">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+    </ion-nav-bar>
+
+    <ion-content overflow-scroll="false">
+        <div class="list card trans" ng-if="scheduleds.length>0">
+          <ion-item ng-repeat="scheduled in scheduleds" class="item">              
+              <div class="item item-text-wrap">
+                  {{scheduled.description}}
+              </div>
+              <button ng-if="scheduled.userId===Profile.userId" class="button button-assertive item-right button-small" outline item-right ng-click="delete($index, scheduled._id)">Remove</button>              
+              <div ng-if="scheduled.fire" class="item item-divider">                  
+                  {{thing.status=scheduled.fire.status;""}}
+                  <div ng-include src="'templates/things-info-render/'+thing.type._id+'.html'"></div>                  
+              </div>              
+              <div ng-if="scheduled.rules" class="item item-divider">
+                <div><strong>{{'common.others.rules'|translate}}:</strong></div>
+                <div ng-repeat="rule in scheduled.rules">- {{ rule.name }}</div>
+              </div>
+          </ion-item>
+        </div>
+        <div class="card" ng-if="scheduleds.length==0">
+          <div class="item item-text-wrap">
+            {{'scheduled.notFound'|translate}}   
+          </div>
+        </div>
+        <div class="footer-height"/>
+    </ion-content>
+
+</ion-view>

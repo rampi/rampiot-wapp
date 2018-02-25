@@ -1,0 +1,193 @@
+{
+    "thingsCommonsButton":{
+        "listen": "Subscribe",
+        "configure": "Configure",
+        "rules": "Rules",
+        "scheduled": "Scheduled"
+    },
+    "alertMessages":{
+        "alert": "Alert",
+        "error": "Error",
+        "info": "Info",
+        "confirm": "Confirm",
+        "emailTitle": "Email",
+        "changePassTitle": "Change Password",
+        "changePassContent": "Type old password, new password and confirm",
+        "missingData": "Missing data, try again",
+        "emailToShareThing": "Insert recipient user's email for share thing",
+        "thingSharedOk": "Thing shared successfully",
+        "thingUnsharedOk": "Thing unshared successfully",
+        "errorWhileLogin": "Error while login, try again",
+        "userIdMustBe4Min": "Error on user id, must be min 4 characters",
+        "passMustBe7Min": "Error on password, must be min 7 characters",
+        "nameMustBe2Min": "Error on name, must be min 2 characters",
+        "lastNameMustBe2Min": "Error on last name, must be min 2 characters",
+        "phoneMustBe5Min": "Error on phone, must be min 5 characters",
+        "passNotMatch": "Passwords not match",
+        "invalidEmailFormat": "Invalid email format",
+        "selectLanguage": "Select language",
+        "selectTimezone": "Select timezone",
+        "userIdAlreadyExists": "User id already exists",
+        "invalidPhoneNumber": "Invalid phone number",
+        "registeringError": "Error while registering, try again",
+        "newPasswordSentToEmail": "A new password was sent to your email",
+        "emailNotFound": "Email not found",
+        "userNotFound": "User not found",
+        "errorSendingPass": "Error sending password, try again",
+        "thingAlreadyShared": "Thing already shared with user",
+        "errorUnsharingThing": "Error while unsharing thing, try again later",
+        "errorSharingThing": "Error while sharing thing, try again later",
+        "errorUpdatingUser": "Error updating user, try again later",
+        "passChanged": "Password changed, login again with new password",
+        "currentPassError": "Current password error, try again",
+        "changePassError": "Error changing password, try again",
+        "newThingAdded": "New thing {{thingName}} was added!!",
+        "thingDeletedByOwner": "Thing {{thingName}} was deleted by owner!!",
+        "errorOnFormVerifyFields": "You have an error on form, please, verify fields",
+        "errorOnFormVerifyFormat": "You have an error on form, please, verify fields format",
+        "errorOnFormVerifyMissingFields": "You have an error on form, please, missing fields",
+        "errorOnFormTryAgain": "You have an error on form, please, verify and try again",
+        "ruleSavedOk": "Rule saved OK",
+        "errorSavingRule": "Error saving rule, try again",
+        "selectRuleBeforeSave": "Select rule first and before save",
+        "selectActionForScheduled": "Select an action for scheduled, this can be thing fire or rule validation",
+        "errorScheduledRegex": "Error on scheduled expression, review and try again",
+        "selectBasicOrAdvanced": "Select an scheduled Basic or Advanced",
+        "areYouSure": "Are you sure ?",
+        "profileUpdatedOk": "Profile updated successfully",
+        "successSave": "Changes saved successfully",
+        "failSave": "Error while saving changes, try again",
+        "notModified": "Nothing saved, not changes found",
+        "sessionError": "For security reasons you need login again because your session is expired",
+        "offlineError": "You are offline, connect to a network and try again",
+        "updatePropertiesError": "Error while updating properties, try again",
+        "success": "Success"
+    },
+    "common":{        
+        "thingTypes":{            
+            "SMART_DOOR": "Smart door"
+        },
+        "viewsTitles":{            
+            "dashboard": "Dashboard",
+            "rules": "Rules",
+            "scheduled": "Scheduled",            
+            "register": "Register",
+            "profile": "Profile",
+            "thingRegistration": "Thing Registration",
+            "share": "Share",
+            "properties": "Thing properties"
+        },
+        "floatingMenu":{
+            "logout": "Logout",
+            "profile": "Profile",
+            "addThing": "Add Thing"
+        },
+        "others":{
+            "timezone": "Timezone",
+            "total": "Total",
+            "login": "Login",
+            "offline": "Offline",
+            "online": "Online",
+            "between": "Between",
+            "and": "And",
+            "hours": "Hours",
+            "minutes": "Minutes",
+            "seconds": "Seconds",
+            "thing": "Thing",
+            "type": "Type",
+            "name": "Name",
+            "days": "Days",
+            "actions": "Actions",
+            "username": "Username",
+            "password": "Password",
+            "confirmPassword": "Confirm Password",
+            "forgotYourPassword": "Forgot your password",
+            "lastName": "Last Name",
+            "email": "Email",
+            "country": "Country",
+            "phone": "Phone",
+            "lang": "Language",
+            "english": "English",
+            "spanish": "Español",
+            "rules": "Rules",
+            "currentPass": "Current Password",
+            "newPass": "New Password",
+            "retypeNewPass": "Retype New Password",
+            "refreshing": "Refreshing...",
+            "foregroundServiceMSG": "Rampiot is waiting notifications"
+        },
+        "buttons":{
+            "rules": "Rules",
+            "scheduled": "Scheduled",
+            "delete": "Delete",
+            "share": "Share",
+            "add": "Add",
+            "next": "Next",
+            "cancel": "Cancel",
+            "new": "New",
+            "view": "View",
+            "remove": "Remove",
+            "all": "All",
+            "preview": "Preview",
+            "ok": "Ok",
+            "save": "Save",
+            "edit": "Edit",
+            "login": "Login",
+            "register": "Register",
+            "signup": "Signup",
+            "setPassword": "Set Password",
+            "update": "Update",
+            "finish": "Finish",
+            "listen": "Listen",
+            "close": "Close"
+        }
+    },
+    "thingInfo":{
+        "common":{
+            "connected": "Connected",
+            "true": "True",
+            "false": "False"
+        },
+        "SMART_DOOR":{
+            "title": "Smart door",            
+            "status": "Status",
+            "infoRender": "Door status",
+            "closed_locked": "Locked",
+            "closed_unlocked": "Unlocked",
+            "opened": "Open",
+            "lock": "Lock",
+            "unlock": "Unlock",
+            "open": "Open", 
+            "close": "Close"
+
+        }
+    },
+    "thingRegistration":{
+        "step1": {
+            "header": "Go to your wifi list and connect to a network like 'RAMPIOTXXXXXX'",
+            "connected": "You are connected to $SSID, press next to continue with the thing registration."
+        },
+        "step2":{
+            "header": "Fill form data for finish thing registration",
+            "id": "ID",
+            "owner": "Owner",
+            "type": "Type",
+            "name": "Name",
+            "ssid": "Wifi Name",
+            "ssidPass": "Wifi Pass"            
+        },
+        "step3":{
+            "header": "Thing register completed !!, reconnect to your wifi or mobile network and wait while thing connects to rampiot services.",
+            "subHeader": "If your thing not appear on App, and you wants reconfigure again, you need press the thing reset button for a few seconds."
+        }        
+    },
+    "scheduled":{        
+        "notFound": "Scheduleds not found."
+    },
+    "share": {
+        "notFound": "Thing not shared, start sharing thing clicking in '+New' button"
+    },
+    "rules":{
+        "rulesNotFound": "Rules not found, start creating a rule clicking in '+New' button"
+    }        
+}

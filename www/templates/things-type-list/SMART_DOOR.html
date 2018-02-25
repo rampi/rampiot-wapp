@@ -1,0 +1,4 @@
+{{thing.name}}
+    <p>{{'thingInfo.SMART_DOOR.status'|translate}}: 
+      {{!thing.connected ? 'common.others.offline' : thing.status.state ? 'thingInfo.SMART_DOOR.'+thing.status.state : 'common.others.online' |translate}}</p>
+<br/>

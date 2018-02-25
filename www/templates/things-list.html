@@ -1,0 +1,13 @@
+<ion-view view-title="{{'thingInfo.'+thingTypeId+'.title'|translate}}" class="wall-background">
+    <ion-content overflow-scroll="false">
+        <div class="list card trans">
+          <ion-item ng-repeat="thing in things"
+            class="item {{!thing.connected ? 'disconnected' : ''}} item-avatar">              
+              <img src={{'img/things/'+thingTypeId+'.png'}} class="vcenter_avatar {{!thing.connected ? 'grayscale' : ''}}"/>
+              <div ng-include src="'templates/things-type-list/'+thingTypeId+'.html'"></div>              
+              <div ng-include src="'templates/common/common-buttons-list.html'"></div>              
+          </ion-item>
+        </div>
+        <div class="footer-height"/>
+    </ion-content>    
+</ion-view>

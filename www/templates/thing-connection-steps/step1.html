@@ -1,0 +1,19 @@
+<ion-view hide-nav-bar="false" view-title="{{'common.viewsTitles.thingRegistration'|translate}}" class="wall-background">        
+    <ion-content overflow-scroll="false">
+        
+        <div class="card">
+        <div class="item item-text-wrap">
+            {{ currentMessage }}
+        </div>
+        </div>        
+        
+        <img src="img/thing-conn-steps/wifi-list-ex.png" class="center"/>                        
+
+        <div class="list list-inset">
+            <button class="button button-block button-dark" ng-if="thingConnected" outline item-right ng-click="nextStep()">{{'common.buttons.next'|translate}}</button>
+            <button class="button button-block button-assertive" ng-if="Profile.myTypes.length > 0" outline item-right ng-click="cancel()">{{'common.buttons.cancel'|translate}}</button>
+        </div>
+        
+        <div class="footer-height"/>
+    </ion-content>    
+</ion-view>

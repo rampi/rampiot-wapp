@@ -1,0 +1,11 @@
+{
+  "name": "rampiot-wapp",
+  "app_id": "2d87ac80",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "https://api.rampiot.com/v1",
+      "rejectUnauthorized": false
+    }
+  ]
+}

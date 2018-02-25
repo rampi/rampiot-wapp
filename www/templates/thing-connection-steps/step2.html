@@ -1,0 +1,44 @@
+<ion-view hide-nav-bar="false" view-title="{{'common.viewsTitles.thingRegistration'|translate}}" class="wall-background">
+    <ion-content overflow-scroll="false">
+        
+        <div class="card">
+            <div class="item item-text-wrap">
+                {{'thingRegistration.step2.header'|translate}}
+            </div>
+        </div>    
+
+        <div class="list list-inset">
+            <label class="item item-input form-background">
+                <div class="input-label"><strong>{{'thingRegistration.step2.id'|translate}}</strong></div>
+                <input value="{{thing._id}}" type="text" class="form-background" disabled>
+            </label>
+            <label class="item item-input form-background">
+                <div class="input-label"><strong>{{'thingRegistration.step2.owner'|translate}}</strong></div>
+                <input value="{{Profile.userId}}" type="text" class="form-background" disabled>
+            </label>
+            <label class="item item-input form-background">
+                <div class="input-label"><strong>{{'thingRegistration.step2.type'|translate}}</strong></div>
+                <input value="{{thing.type}}" type="text" class="form-background" disabled>
+            </label>
+            <label class="item item-input form-background">
+                <div class="input-label"><strong>{{'thingRegistration.step2.name'|translate}}</strong></div>
+                <input ng-model="thing.name" type="text" class="form-background">
+            </label>            
+            <label class="item item-input form-background">
+                <div class="input-label"><strong>{{'thingRegistration.step2.ssid'|translate}}</strong></div>
+                <input ng-model="thing.ssid" type="text" class="form-background">
+            </label>
+            <label class="item item-input form-background">
+                <div class="input-label"><strong>{{'thingRegistration.step2.ssidPass'|translate}}</strong></div>
+                <input ng-model="thing.password" type="password" class="form-background">
+            </label>
+        </div>
+
+        <div class="list list-inset">
+            <button class="button button-block button-dark" outline item-right ng-click="signupThing()">{{'common.buttons.signup'|translate}}</button>                                                           
+            <button class="button button-block button-assertive" outline item-right ng-click="cancel()">{{'common.buttons.cancel'|translate}}</button>
+        </div>
+        
+        <div class="footer-height"/>
+    </ion-content>    
+</ion-view>

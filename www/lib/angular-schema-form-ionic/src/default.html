@@ -1,0 +1,19 @@
+<div for="{{form.key.slice(-1)[0]}}" class="schema-form-{{form.type}} {{form.htmlClass}}"
+    ng-class="{'has-error': hasError(), 'has-success': hasSuccess(), 'has-feedback': form.feedback !== false}">
+    <label class="item item-input form-background">
+        <input sf-field-model
+         ng-show="form.key" 
+         class="schema-form-input" 
+         type="{{form.type}}"
+         step="any"
+         sf-changed="form"
+         placeholder="{{form.placeholder ? form.placeholder : form.title}}"
+         id="{{form.key.slice(-1)[0]}}"
+         ng-class="form.fieldHtmlClass"
+         ng-disabled="form.readonly"
+         schema-validate="form"
+         name="{{form.key.slice(-1)[0]}}"
+         aria-describedby="{{form.key.slice(-1)[0] + 'Status'}}">
+    </label>
+    <p class="help-block" sf-message="form.description"></p>
+</div>

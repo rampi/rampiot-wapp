@@ -1,0 +1,19 @@
+<ion-view hide-nav-bar="true" class="wall-background">
+    <ion-content overflow-scroll="false" class="has-header" style="margin-top: 50px">        
+        <div class="list list-inset">
+            <label class="item item-input form-background">            
+                <input ng-model="profile.userId" type="text" placeholder="{{'common.others.login'|translate}}" class="form-background">
+            </label>
+        </div>
+        <div class="list list-inset">
+            <label class="item item-input form-background">            
+                <input ng-model="profile.password"  placeholder="{{'common.others.password'|translate}}" type="password" class="form-background">
+            </label>
+        </div>      
+        <div class="list list-inset">
+            <a class="item-right" href="#/forgot">{{'common.others.forgotYourPassword'|translate}}</a><br/>        
+            <button class="button button-block button-positive" outline item-right ng-click="login()">{{'common.buttons.login'|translate}}</button>                                                                       
+            <button class="button button-block button-assertive" outline item-right ng-click="register()">{{'common.buttons.register'|translate}}</button>
+        </div>  
+    </ion-content>
+</ion-view>

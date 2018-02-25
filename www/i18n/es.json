@@ -1,0 +1,191 @@
+{
+    "thingsCommonsButton":{
+        "listen": "Eventos",
+        "configure": "Configurar",
+        "rules": "Reglas",
+        "scheduled": "Eventos"
+    },
+    "alertMessages":{
+        "alert": "Alerta",
+        "error": "Error",
+        "info": "Info",
+        "confirm": "Confirmar",
+        "emailTitle": "Correo",
+        "changePassTitle": "Cambiar clave",
+        "changePassContent": "Escriba su clave anterior, su nueva clave y confirme",
+        "missingData": "Faltan datos por enviar, revise e intente nuevamente",
+        "emailToShareThing": "Ingrese el correo del usuario al que le quiere compartir el Thing",
+        "thingSharedOk": "Thing compartido exitosamente",
+        "errorWhileLogin": "Error mientras se realizaba el login, intente nuevamente",
+        "userIdMustBe4Min": "El id del usuario debe contener al menos 4 caracteres",
+        "passMustBe7Min": "La clave debe contener al menos 7 caracteres",
+        "nameMustBe2Min": "El nombre debe contener al menos 2 caracteres",
+        "lastNameMustBe2Min": "El apellido debe contener al menos 2 caracteres",
+        "phoneMustBe5Min": "El número telefónico debe contener al menos 5 caracteres",
+        "passNotMatch": "Las claves no coinciden",
+        "invalidEmailFormat": "El formato del correo no es válido",
+        "selectLanguage": "Seleccione idioma",
+        "selectTimezone": "Seleccione zona horaria",
+        "userIdAlreadyExists": "El id de usuario ya está registrado",
+        "invalidPhoneNumber": "El número de teléfono no es un número válido",
+        "registeringError": "Error mientras se realizaba el registro, intente nuevamente",
+        "newPasswordSentToEmail": "Una nueva clave ha sido generada y enviada su correo",
+        "emailNotFound": "Correo no encontrado",
+        "userNotFound": "User not found",
+        "errorSendingPass": "Error tratando de reestablecer la clave, intente nuevamente",
+        "thingAlreadyShared": "El Thing ya está compartido con el usuario especificado",
+        "errorUnsharingThing": "Error mientras se descompartía el Thing",
+        "errorSharingThing": "Error cuando se compartía el Thing",
+        "errorUpdatingUser": "Error cuando se actualizaba la información dle usuario, intente nuevamente",
+        "passChanged": "La clave ha sido cambiada, ingrese nuevamente con la nueva clave",
+        "currentPassError": "Error con la clave actual, revise e intente nuevamente",
+        "changePassError": "Error cuando se cambiaba la clave, intente nuevamente",
+        "newThingAdded": "Se agergó un nuevo Thing llamado {{thingName}}!!",
+        "thingDeletedByOwner": "El Thing {{thingName}} ha sido borrado por su dueño!!",
+        "errorOnFormVerifyFields": "Hay un error en el formulario, por favor revise e intente nuevamente",
+        "errorOnFormVerifyFormat": "Hay un error en el formato del algunos campos en elformulario, por favor revise e intente nuevamente",
+        "errorOnFormVerifyMissingFields": "Faltan datos por llenar en el formulario, revise e intente de nuevo",
+        "errorOnFormTryAgain": "Hay un error en el formulario, por favor revise e intente nuevamente",
+        "ruleSavedOk": "La regla fue guardada con éxito",
+        "errorSavingRule": "Error al guardar la regla, intente nuevamente",
+        "selectRuleBeforeSave": "Primero debe seleccionar la regla y después puede guardar",
+        "selectActionForScheduled": "Seleccione una acción para el evento programado, este puede ser una acción en el Thing o puede validar una regla",
+        "errorScheduledRegex": "Error en la expresión regular, revise e intente nuevamente",
+        "selectBasicOrAdvanced": "Seleccione un tipo de evento programado, básico o avanzado",
+        "areYouSure": "¿ Esta usted seguro ?",
+        "profileUpdatedOk": "El perfil ha sido actualizado con éxito",
+        "successSave": "Cambios guardados con éxito",
+        "failSave": "No se pudo guardar los cambios, intente nuevamente",
+        "notModified": "No hay cambios para guardar",
+        "sessionError": "Por razones de seguridad, necesita volver a iniciar sesión porque su sesión ha expirado.",
+        "offlineError": "No hay conexión a internet, conéctese a una red e intente nuevamente",
+        "updatePropertiesError": "Error cuando se actualizaban las propiedades, intente nuevamente",
+        "success": "Exitoso"
+    },
+    "common":{        
+        "thingTypes":{            
+            "SMART_DOOR": "Puerta inteligente"                 
+        },
+        "viewsTitles":{                        
+            "dashboard": "Dashboard",
+            "rules": "Reglas",
+            "scheduled": "Eventos",
+            "register": "Registro",
+            "profile": "Perfil",            
+            "thingRegistration": "Registro de dispositivo",
+            "share": "Compartir",
+            "properties": "Propiedades"
+        },
+        "floatingMenu":{
+            "logout": "Cerrar",
+            "profile": "Perfil",
+            "addThing": "Agregar"
+        },
+        "others":{
+            "timezone": "Zonahoraria",
+            "total": "Total",
+            "login": "Login",
+            "offline": "Desconectado",
+            "online": "Conectado",
+            "between": "Entre",
+            "and": "Y",
+            "hours": "Horas",
+            "minutes": "Minutos",
+            "seconds": "Segundos",
+            "thing": "Thing",
+            "type": "Tipo",
+            "name": "Nombre",
+            "days": "Días",
+            "actions": "Acciones",
+            "username": "Numbre de usuario",
+            "password": "Clave",
+            "confirmPassword": "Confirmar clave",
+            "forgotYourPassword": "Olvide mi clave",
+            "lastName": "Apellido",
+            "email": "Correo",
+            "country": "País",
+            "phone": "Teléfono",
+            "lang": "Lenguaje",
+            "english": "English",
+            "spanish": "Español",
+            "rules": "Reglas",
+            "currentPass": "Clave actual",
+            "newPass": "Nueva clave",
+            "retypeNewPass": "Repetir nueva clave",
+            "refreshing": "Actualizando...",
+            "foregroundServiceMSG": "Rampiot está esperando notificaciones"
+        },
+        "buttons":{
+            "rules": "Reglas",
+            "scheduled": "Eventos",
+            "delete": "Borrar",
+            "share": "Compartir",
+            "add": "Agregar",
+            "next": "Siguiente",
+            "cancel": "Cancelar",
+            "new": "Nuevo",
+            "view": "Ver",
+            "remove": "Borrar",
+            "all": "Todos",
+            "preview": "Resumen",
+            "ok": "Ok",
+            "save": "Guardar",
+            "edit": "Editar",
+            "login": "Login",
+            "register": "Registro",
+            "signup": "Dar de alta",
+            "setPassword": "Cambiar clave",
+            "update": "Actualizar",
+            "finish": "Finalizar",
+            "listen": "Escuchar",
+            "close": "Cerrar"
+        }
+    },
+    "thingInfo":{
+        "common":{
+            "connected": "Conectado",
+            "true": "Si",
+            "false": "No"
+        },
+        "SMART_DOOR":{
+            "title": "Puerta inteligente",
+            "status": "Estado",
+            "infoRender": "Estado",
+            "closed_locked": "Segura",
+            "closed_unlocked": "Sin Seguro",
+            "opened": "Abierta",
+            "lock": "Asegurar",
+            "unlock": "Desasegurar",
+            "open": "Abrir", 
+            "close": "Cerrar"
+        }
+    },
+    "thingRegistration":{
+        "step1": {
+            "header": "En el listado de redes WiFi disponibles conéctate a una red cuyo nombre debe ser similar a este 'RAMPIOTXXXXXX'",
+            "connected": "Estás conectado a $SSID, presiona el botón continuar para continuar con el registro."
+        },
+        "step2":{
+            "header": "Llene el formulario con la información del Thing a registrar",
+            "id": "ID",
+            "owner": "Pertenece a",
+            "type": "Tipo",
+            "name": "Nombre",
+            "ssid": "Nombre Wifi",
+            "ssidPass": "Clave Wifi"            
+        },
+        "step3":{
+            "header": "Registro completado !!, vuelva a conectarse a su red Wifi ó móvil y espere mientras el Thing termina de completar el registro por si solo",
+            "subHeader": "Si el dispositivo no aparece en la App y desea reconfigurarlo, debe presionar el botón reset del dispositivo por varios segundos"
+        }        
+    },
+    "scheduled":{        
+        "notFound": "No se encontraron eventos programados"
+    },
+    "share": {
+        "notFound": "Este Thing no está compartido con nadie, empiece compartiendo el Thing presionando el botón '+Nuevo'"
+    },
+    "rules":{        
+        "rulesNotFound": "No se encontraron reglas, empiece creando una regla presionando el botón '+Nuevo'"
+    }        
+}

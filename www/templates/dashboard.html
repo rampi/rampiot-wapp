@@ -1,0 +1,18 @@
+<ion-view view-title="{{'common.viewsTitles.dashboard'|translate}}" class="wall-background" hide-back-button="true">
+    <ion-content overflow-scroll="false">
+        <ion-refresher
+            pulling-text="{{'common.others.refreshing'|translate}}"
+            on-refresh="doRefresh()">
+        </ion-refresher>
+        <div ng-if="items.length>0" class="list card trans">
+          <ion-item ng-repeat="item in items" 
+            on-tap="viewThingsByType('{{item._id}}')" 
+            class="item item-avatar">
+              <img src='img/things/{{item._id}}.png'/>
+              <strong translate>{{ 'common.thingTypes.'+item._id }}</strong>              
+              <p>{{'common.others.total'|translate}}: {{item.count}}</p>
+          </ion-item>
+        </div>        
+        <div class="footer-height"/>
+    </ion-content>
+</ion-view>
